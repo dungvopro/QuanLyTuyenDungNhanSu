@@ -1,0 +1,171 @@
+﻿/* Navbar */
+.dung-navbar {
+    max-width: 1400px;
+    width: 100%;
+    background-color: #222;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+    .dung-navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 25px;
+    }
+
+/* Menu */
+.dung-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+    .dung-menu li {
+        margin-right: 20px;
+    }
+
+        .dung-menu li:last-child {
+            margin-right: 0;
+        }
+
+    .dung-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .dung-menu a:hover {
+            background-color: #555;
+        }
+
+    .dung-menu li.login a {
+        background-color: #6B5B95;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+
+        .dung-menu li.login a:hover {
+            background-color: #563d7c;
+        }
+
+/* Login Form */
+.dung-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    display: none;
+}
+
+.dung-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 2;
+    display: none;
+}
+
+    .dung-form .dung-form-sub {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+        .dung-form .dung-form-sub input[type="text"],
+        .dung-form .dung-form-sub input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            color: #fff;
+            background: transparent;
+            outline: none;
+        }
+
+            .dung-form .dung-form-sub input[type="text"] + .icon,
+            .dung-form .dung-form-sub input[type="password"] + .icon {
+                position: absolute;
+                top: 10px;
+                right: 0;
+                font-size: 18px;
+                color: #aaa;
+            }
+
+    .dung-form input[type="submit"] {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border-radius: 25px;
+        background-color: #a26300;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dung-form .dung-social {
+        margin-top: 20px;
+    }
+
+        .dung-form .dung-social .dung-heading {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+            .dung-form .dung-social .dung-heading h5 {
+                font-size: 14px;
+                color: #fff;
+            }
+
+        .dung-form .dung-social .dung-icons {
+            text-align: center;
+        }
+
+            .dung-form .dung-social .dung-icons a {
+                display: inline-block;
+                margin-right: 10px;
+                font-size: 18px;
+                color: #aaa;
+                transition: color 0.3s ease-in-out;
+            }
+
+                .dung-form .dung-social .dung-icons a:hover {
+                    color: #6B5B95;
+                }
+
+    .dung-form .dung-clear {
+        clear: both;
+    }
+
+/* Dark mode */
+body {
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
